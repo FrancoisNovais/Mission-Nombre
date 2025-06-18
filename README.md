@@ -1,6 +1,6 @@
 # Mission-Nombre
 
-Petit jeu en JavaScript simple pour deviner un nombre aléatoire entre 1 et 100.
+Petit jeu simple en JavaScript pour deviner un nombre aléatoire entre 1 et 100.
 
 ---
 
