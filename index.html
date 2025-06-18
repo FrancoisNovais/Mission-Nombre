@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mission : Nombre</title>
+  </head>
+  <body>
+    <div class="layout">
+      <!--  Nuages -->
+      <img
+        src="./imgs/cloud.png"
+        class="layout_cloud layout_cloud-1"
+        alt="nuage décoratif"
+        aria-hidden="true"
+      />
+      <img
+        src="./imgs/cloud.png"
+        class="layout_cloud layout_cloud-2"
+        alt="nuage décoratif"
+        aria-hidden="true"
+      />
+      <img
+        src="./imgs/cloud.png"
+        class="layout_cloud layout_cloud-3"
+        alt="nuage décoratif"
+        aria-hidden="true"
+      />
+
+      <!--  Décor avant-plan -->
+      <div class="layout_foreground">
+        <img src="./imgs/foreground.png" alt="décor" />
+      </div>
+
+      <!--  Jeu -->
+      <div class="game_container">
+        <header><h1 class="game_title">Devine le Nombre</h1></header>
+        <main class="game_main">
+          <p class="game_intro">
+            Choisis un nombre entre <strong>1</strong> et <strong>100</strong>
+          </p>
+
+          <form class="game_form" action="#">
+            <label for="guess" class="game_label">Votre proposition :</label>
+            <input
+              type="number"
+              id="guess"
+              class="game_input"
+              placeholder="Entrez un nombre"
+              inputmode="numeric"
+              min="1"
+              max="100"
+              required
+            />
+            <button type="submit" class="game_button">Valider</button>
+          </form>
+
+          <p
+            id="message"
+            class="game_message"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+          ></p>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
