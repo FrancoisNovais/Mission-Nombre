@@ -19,7 +19,7 @@ Le jeu propose une interface avec un ciel en dégradé en arrière-plan, des nua
 - ~~Taille aléatoire des nuages~~
 - ~~Validation du nombre saisi (entre 1 et 100)~~
 - ~~Possibilité de rejouer après avoir gagné~~
-- ~~Design responsive~~
+- _Design responsive - <i style="color:red">en cours</i>_
 
 ---
 
@@ -34,6 +34,7 @@ Le jeu propose une interface avec un ciel en dégradé en arrière-plan, des nua
 ## Structure du projet
 
 - `index.html` : fichier contenant le markup
+- `style.css` : fichier conteant le style
 - `imgs/` : dossier les images
 
 ---
