@@ -19,7 +19,7 @@ Le jeu propose une interface avec un ciel en dégradé en arrière-plan, des nua
 - Taille aléatoire des nuages
 - Validation du nombre saisi (entre 1 et 100)
 - Possibilité de rejouer après avoir gagné
-- _Design responsive - en cours_
+- Design responsive
 
 ---
 
