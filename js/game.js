@@ -26,6 +26,13 @@ export const Game = (() => {
   function checkGuess() {
     const guess = parseInt(input.value, 10);
 
+<<<<<<< HEAD
+=======
+    // Vide et focus sur input pour la prochaine saisie
+    input.value = "";
+    input.focus();
+
+>>>>>>> a1c497e (Vide et focus sur input pour la prochaine saisie et novalidate sur form)
     if (isNaN(guess) || guess < 1 || guess > 100) {
       message.textContent = "Entrez un nombre valide entre 1 et 100.";
       message.style.color = "orange";
