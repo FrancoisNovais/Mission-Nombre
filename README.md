@@ -13,13 +13,13 @@ Le jeu propose une interface avec un ciel en dégradé en arrière-plan, des nua
 
 ## Fonctionnalités
 
-- ~~Génération aléatoire d’un nombre entre 1 et 100~~
-- ~~Indications « C’est plus ! » ou « C’est moins ! » selon la proposition~~
-- ~~Message de réussite avec félicitations~~
-- ~~Taille aléatoire des nuages~~
-- ~~Validation du nombre saisi (entre 1 et 100)~~
-- ~~Possibilité de rejouer après avoir gagné~~
-- _Design responsive - <i style="color:red">en cours</i>_
+- Génération aléatoire d’un nombre entre 1 et 100
+- Indications « C’est plus ! » ou « C’est moins ! » selon la proposition
+- Message de réussite avec félicitations
+- Taille aléatoire des nuages
+- Validation du nombre saisi (entre 1 et 100)
+- Possibilité de rejouer après avoir gagné
+- _Design responsive - en cours_
 
 ---
 
@@ -34,8 +34,17 @@ Le jeu propose une interface avec un ciel en dégradé en arrière-plan, des nua
 ## Structure du projet
 
 - `index.html` : fichier contenant le markup
-- `style.css` : fichier conteant le style
-- `imgs/` : dossier les images
+- `style.css` : fichier contenant le style
+- `imgs/` : dossier des images
+- `js/` : dossier des scripts
+
+---
+
+## Évolutions envisagées
+
+Je souhaite faire évoluer ce projet pour qu’il devienne une plateforme regroupant plusieurs mini-jeux.  
+L’objectif est de permettre à l’utilisateur de faire défiler ces mini-jeux et d’y jouer facilement via une interface fluide et intuitive.  
+Je réfléchis encore à la meilleure façon d’implémenter cette navigation (carrousel, onglets, pages dynamiques, etc.).
 
 ---
 

@@ -8,71 +8,78 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
-
     <title>Mission : Nombre</title>
   </head>
   <body>
     <div class="layout">
-      <!--  Nuages -->
+      <!-- Nuages -->
       <img
         src="./imgs/cloud.png"
-        class="layout_cloud layout_cloud-1"
+        class="layout__cloud layout__cloud--1"
         alt="nuage décoratif"
         aria-hidden="true"
       />
       <img
         src="./imgs/cloud.png"
-        class="layout_cloud layout_cloud-2"
+        class="layout__cloud layout__cloud--2"
         alt="nuage décoratif"
         aria-hidden="true"
       />
       <img
         src="./imgs/cloud.png"
-        class="layout_cloud layout_cloud-3"
+        class="layout__cloud layout__cloud--3"
         alt="nuage décoratif"
         aria-hidden="true"
       />
 
-      <!--  Décor avant-plan -->
-      <div class="layout_foreground">
+      <!-- Décor avant-plan -->
+      <div class="layout__foreground">
         <img src="./imgs/foreground.png" alt="décor" />
       </div>
 
-      <!--  Jeu -->
-      <div class="game_container">
-        <header><h1 class="game_title">Devine le Nombre</h1></header>
-        <main class="game_main">
-          <p class="game_intro">
-            Choisis un nombre entre <strong>1</strong> et <strong>100</strong>
-          </p>
-
-          <form class="game_form" action="#">
-            <div class="game-field">
-              <label for="guess" class="game_label">Votre proposition :</label>
-              <input
-                type="number"
-                id="guess"
-                class="game_input"
-                placeholder="Entrez un nombre"
-                inputmode="numeric"
-                min="1"
-                max="100"
-                required
-              />
-
-              <button type="submit" class="game_button">Valider</button>
-            </div>
-          </form>
-
-          <p
-            id="message"
-            class="game_message"
-            role="status"
-            aria-live="polite"
-            aria-atomic="true"
-          ></p>
-        </main>
+      <!-- Jeu -->
+      <div class="game__container">
+        <section class="game__section game__section--active">
+          <header>
+            <h1 class="game__title">Devine le Nombre</h1>
+          </header>
+          <main class="game__main">
+            <p class="game__intro">
+              Choisis un nombre entre <strong>1</strong> et <strong>100</strong>
+            </p>
+            <form
+              class="game__form"
+              action="#"
+              onsubmit="event.preventDefault()"
+            >
+              <div class="game__field">
+                <label for="guess" class="game__label"
+                  >Votre proposition :</label
+                >
+                <input
+                  type="number"
+                  id="guess"
+                  class="game__input"
+                  placeholder="Entrez un nombre"
+                  inputmode="numeric"
+                  min="1"
+                  max="100"
+                  required
+                />
+                <button type="submit" class="game__button">Valider</button>
+              </div>
+            </form>
+            <p
+              id="message"
+              class="game__message"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            ></p>
+          </main>
+        </section>
       </div>
     </div>
+    <script type="module" src="./js/apps.js"></script>
   </body>
 </html>
